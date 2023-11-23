@@ -1,7 +1,11 @@
 <template>
     <div>
         <nav class="flex justify-around lg:justify-end lg:gap-x-14 lg:mr-20">
-            <div v-for="(section, keySection) in sections" :key="keySection">
+            <div
+                v-for="(section, keySection) in sections"
+                :key="keySection"
+                class="hover:cursor-pointer"
+            >
                 {{ section }}
             </div>
         </nav>
