@@ -1,11 +1,11 @@
 <template>
-    <div class="flex flex-col items-center gap-16">
-        <div class="text-5xl text-center sm:text-8xl 2xl:text-9xl">
+    <div class="flex flex-col items-center gap-y-24">
+        <div class="text-center text-6xl sm:text-7xl md:text-8xl lg:9xl">
             <p>Matheus</p>
             <p>Ricieri</p>
         </div>
         <p
-            class="text-3xl sm:text-5xl lg:absolute lg:bottom-0 lg:w-full lg:text-end lg:mr-40 lg:mb-11 2xl:text-9xl"
+            class="text-center text-3xl sm:text-4xl md:text-5xl lg:w-full lg:text-end lg:pr-10 lg:text-6xl"
         >
             &lt;/&gt;
         </p>
