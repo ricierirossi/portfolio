@@ -4,23 +4,25 @@
         href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css"
     />
     <div>
-        <div class="flex flex-col text-center gap-y-9 px-11">
-            <div class="text-4xl sm:text-5xl 2xl:text-8xl">
+        <div class="flex flex-col gap-y-10 lg:flex-row lg:flex-wrap">
+            <div class="text-center text-4xl sm:text-5xl md:text-6xl">
                 <p>Um pouco</p>
                 <p>sobre mim</p>
             </div>
-            <p class="text-justify sm:text-3xl 2xl:text-4xl">
+            <p class="text-justify text-2xl md:text-3xl">
                 Lorem ipsum dolor, sit amet consectetur adipisicing elit.
                 Praesentium repellat consequatur quam illo ipsa iste voluptatem
                 accusantium alias omnis magnam est quae, eos nesciunt ea!
                 Similique, quos! Iure, tempora ut!
             </p>
-            <p class="sm:text-3xl 2xl:text-4xl">Algumas tecnologias que uso</p>
-            <div class="flex flex-wrap justify-center gap-10">
+            <p class="text-center text-2xl md:text-3xl">
+                Algumas tecnologias que uso
+            </p>
+            <div class="flex justify-center gap-x-4">
                 <div v-for="(skill, skillKey) in skills" :key="skillKey">
                     <i
                         :class="`devicon-${skill}-plain`"
-                        class="text-3xl sm:text-4xl lg:text-5xl 2xl:text-6xl"
+                        class="text-4xl sm:text-5xl md:text-6xl"
                     ></i>
                 </div>
             </div>

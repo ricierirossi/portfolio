@@ -1,17 +1,18 @@
 <template>
-    <div>
-        <nav class="flex justify-around lg:justify-end lg:gap-x-14 lg:mr-20">
-            <div
-                v-for="(section, keySection) in sections"
-                :key="keySection"
-                class="hover:cursor-pointer"
-            >
-                {{ section }}
-            </div>
-        </nav>
-    </div>
+    <nav class="">
+        <div
+            v-for="(section, keySection) in sections"
+            :key="keySection"
+            @click="selectedSection = keySection"
+            class="hover:cursor-pointer"
+            :class="{ underline: selectedSection === keySection }"
+        >
+            {{ section }}
+        </div>
+    </nav>
 </template>
 
 <script setup>
 const sections = ["Início", "Sobre", "Projetos", "Contato"];
+const selectedSection = ref(0);
 </script>
