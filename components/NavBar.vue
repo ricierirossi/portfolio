@@ -5,7 +5,7 @@
     <div
       v-for="(section, keySection) in sections"
       :key="keySection"
-      @click="selectedSection = keySection"
+      @click="(selectedSection = keySection), scrollingTo(keySection)"
       class="hover:cursor-pointer text-xl flex items-center lg:px-10"
       :class="{ underline: selectedSection === keySection }"
     >
@@ -17,4 +17,12 @@
 <script setup>
 const sections = ["Início", "Sobre", "Projetos", "Contato"];
 const selectedSection = ref(0);
+const coordY = ref(0);
+
+const scrollingTo = (section) => {
+  coordY.value =
+    document.getElementById(section).getBoundingClientRect().y + window.scrollY;
+
+  globalThis.scrollTo(0, coordY.value);
+};
 </script>
