@@ -1,5 +1,5 @@
 <template>
-  <div class="flex flex-col justify-center items-center gap-y-24 pt-20">
+  <div id="0" class="flex flex-col justify-center items-center gap-y-24 pt-20">
     <div class="text-center text-6xl sm:text-7xl md:text-8xl lg:9xl">
       <p>Matheus</p>
       <p>Ricieri</p>

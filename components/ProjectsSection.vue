@@ -1,5 +1,6 @@
 <template>
   <div
+    id="2"
     class="grid grid-cols-1 items-center justify-items-center lg:grid-cols-2"
   >
     <p
