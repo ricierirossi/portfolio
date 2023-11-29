@@ -5,6 +5,7 @@
   />
 
   <div
+    id="1"
     class="flex flex-col justify-center items-center gap-y-7 lg:grid lg:grid-cols-2 grid-rows-3 lg:py-11 lg:gap-0"
   >
     <div
