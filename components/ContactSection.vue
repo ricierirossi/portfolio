@@ -1,6 +1,10 @@
 <template>
-  <div id="3" class="grid items-center">
-    <p class="text-center text-4xl sm:text-5xl md:text-6xl">Entre em contato</p>
+  <section id="3" class="grid items-center">
+    <h2>
+      <p class="text-center text-3xl sm:text-4xl lg:text-5xl">
+        Entre em contato
+      </p>
+    </h2>
     <div
       class="flex self-start justify-center gap-x-20 text-center lg:gap-x-32"
     >
@@ -24,5 +28,5 @@
         ></i
       ></a>
     </div>
-  </div>
+  </section>
 </template>
