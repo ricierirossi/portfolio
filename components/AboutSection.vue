@@ -1,46 +1,64 @@
 <template>
-  <div
-    id="1"
-    class="flex flex-col justify-center items-center gap-y-7 lg:grid lg:grid-cols-2 grid-rows-3 lg:py-11 lg:gap-0"
-  >
-    <div
-      class="text-center text-4xl sm:text-5xl md:text-6xl lg:col-start-1 lg:col-end-2"
-    >
-      <p>Um pouco</p>
-      <p>sobre mim</p>
-    </div>
-    <p
-      class="text-justify px-4 text-2xl sm:px-14 md:text-3xl lg:col-start-2 lg:col-end-3 lg:row-start-1 lg:row-end-4 lg:max-w-2xl"
-    >
-      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Praesentium
-      repellat consequatur quam illo ipsa iste voluptatem accusantium alias
-      omnis magnam est quae, eos nesciunt ea! Similique, quos! Iure, tempora ut!
-    </p>
-    <div
-      class="flex flex-col gap-y-8 lg:grid lg:row-start-2 lg:row-end-4 lg:px-5"
-    >
-      <p class="text-center text-2xl md:text-3xl">
-        Algumas tecnologias que uso
-      </p>
-      <div class="flex justify-center gap-x-4 lg:row-start-3 lg:row-end-4">
-        <div v-for="(skill, skillKey) in skills" :key="skillKey">
-          <i
-            :class="`devicon-${skill}-plain`"
-            class="text-4xl sm:text-5xl md:text-6xl"
-          ></i>
+  <section id="1" class="flex flex-col justify-center text-center px-5">
+    <div class="flex flex-col gap-y-10 pb-10 lg:grid grid-cols-2">
+      <h2 class="text-3xl sm:text-4xl lg:text-5xl">
+        <p>Um pouco sobre mim</p>
+      </h2>
+      <h3
+        class="text-base sm:text-lg lg:text-xl text-justify self-center max-w-md lg:col-start-1 lg-col-end-2 lg:row-start-2 lg:row-end-3 lg:place-self-center"
+      >
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Praesentium
+          repellat consequatur quam illo ipsa iste voluptatem accusantium alias
+          omnis magnam est quae, eos nesciunt ea! Similique, quos! Iure, tempora
+          ut!
+        </p>
+      </h3>
+      <div
+        class="flex flex-col gap-y-8 lg:row-start-1 lg:row-end-3 lg:px-5 lg:place-self-center"
+      >
+        <h3>
+          <p class="text-base sm:text-lg lg:text-xl">
+            Algumas tecnologias que uso
+          </p>
+        </h3>
+        <div
+          class="flex flex-wrap justify-center gap-x-5 text-3xl sm:text-4lg lg:gap-y-5"
+        >
+          <div
+            v-for="(skillIcon, skillIconKey) in skillsIcons"
+            :key="skillIconKey"
+          >
+            <i
+              :class="`devicon-${skillIcon}`"
+              class=""
+              :alt="skillsName[skillIconKey]"
+            ></i>
+            <p class="text-center text-base sm:text-lg lg:text-xl">
+              {{ skillsName[skillIconKey] }}
+            </p>
+          </div>
         </div>
       </div>
     </div>
-  </div>
+  </section>
 </template>
 
 <script setup>
-const skills = [
-  "html5",
-  "css3",
-  "tailwindcss",
-  "javascript",
-  "vuejs",
-  "nuxtjs",
+const skillsIcons = [
+  "html5-plain",
+  "css3-plain",
+  "tailwindcss-plain",
+  "javascript-plain",
+  "vuejs-plain",
+  "nuxtjs-plain",
+];
+const skillsName = [
+  "HTML 5",
+  "CSS 3",
+  "Tailwind CSS",
+  "JavaScript",
+  "Vue.js",
+  "Nuxt.js",
 ];
 </script>
