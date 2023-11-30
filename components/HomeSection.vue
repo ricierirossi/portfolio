@@ -20,7 +20,10 @@
           minha jornada e visão no desenvolvimento web.
         </p>
       </h3>
-      <p class="text-2xl">&lt;/&gt;</p>
+      <div class="flex justify-around">
+        <NetworkIconsSmall />
+        <p class="text-2xl">&lt;/&gt;</p>
+      </div>
     </div>
   </section>
 </template>
