@@ -1,20 +1,35 @@
 <template>
-  <div
-    id="2"
-    class="grid grid-cols-1 items-center justify-items-center lg:grid-cols-2"
-  >
-    <p
-      class="text-center text-4xl sm:text-5xl md:text-6xl px-14 lg:col-start-2 lg:max-w-xl"
-    >
-      Alguns dos meus projetos
-    </p>
+  <section id="2" class="flex flex-col justify-center text-center px-5 pt-10">
     <div
-      class="grid grid-cols-1 gap-y-7 justify-items-center items-end px-14 sm:grid-cols-2 sm:max-w-max sm:gap-x-7 lg:gap-x-24 lg:max-w-2lg lg:col-start-1 lg:row-start-1"
+      class="flex flex-col gap-y-10 pb-10 lg:grid lg:grid-cols-2 lg:grid-rows-1"
     >
-      <div class="w-60 h-32 bg-white text-black">Em breve</div>
-      <div class="w-60 h-32 bg-white text-black">Em breve</div>
-      <div class="w-60 h-32 bg-white text-black">Em breve</div>
-      <div class="w-60 h-32 bg-white text-black">Em breve</div>
+      <h2 class="lg:col-start-2 lg:col-end-3 lg:row-start-1 lg:row-end-3">
+        <p class="text-3xl sm:text-4xl lg:text-5xl">Alguns dos meus projetos</p>
+      </h2>
+      <div
+        class="grid grid-cols-1 place-self-center gap-4 sm:grid-cols-2 lg:col-start-1 lg:col-end-2 lg:row-start-1 lg:row-end-3"
+      >
+        <div
+          class="w-60 h-32 bg-white text-black flex items-center justify-center"
+        >
+          Em breve
+        </div>
+        <div
+          class="w-60 h-32 bg-white text-black flex items-center justify-center"
+        >
+          Em breve
+        </div>
+        <div
+          class="w-60 h-32 bg-white text-black flex items-center justify-center"
+        >
+          Em breve
+        </div>
+        <div
+          class="w-60 h-32 bg-white text-black flex items-center justify-center"
+        >
+          Em breve
+        </div>
+      </div>
     </div>
-  </div>
+  </section>
 </template>
