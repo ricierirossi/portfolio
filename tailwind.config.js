@@ -18,7 +18,7 @@ export default {
         julius: ["Julius Sans One"],
       },
       gridTemplateRows: {
-        layout: "repeat(4, minmax(100vh, 1fr))",
+        layout: "repeat(4, minmax(100vh, 100%))",
       },
     },
   },
