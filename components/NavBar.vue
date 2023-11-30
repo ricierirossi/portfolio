@@ -2,6 +2,7 @@
   <nav
     class="bg-charcoal flex justify-around fixed bottom-0 w-full h-10 lg:top-0 lg:justify-end"
   >
+    <div>{{ scrollingCoordY }}</div>
     <div
       v-for="(section, keySection) in sections"
       :key="keySection"
@@ -18,6 +19,7 @@
 const sections = ["Início", "Sobre", "Projetos", "Contato"];
 const selectedSection = ref(0);
 const coordY = ref(0);
+const scrollingCoordY = ref(0);
 
 const scrollingTo = (section) => {
   coordY.value =
