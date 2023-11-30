@@ -6,7 +6,7 @@
       v-for="(section, keySection) in sections"
       :key="keySection"
       @click="(selectedSection = keySection), scrollingTo(keySection)"
-      class="hover:cursor-pointer text-xl flex items-center lg:px-10"
+      class="hover:cursor-pointer text-xl flex items-center py-5 lg:px-10"
       :class="{ underline: selectedSection === keySection }"
     >
       {{ section }}
