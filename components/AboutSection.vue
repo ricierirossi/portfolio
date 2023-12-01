@@ -8,10 +8,13 @@
         class="text-base sm:text-lg lg:text-xl text-justify self-center max-w-md lg:col-start-1 lg-col-end-2 lg:row-start-2 lg:row-end-3 lg:place-self-center"
       >
         <p>
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Praesentium
-          repellat consequatur quam illo ipsa iste voluptatem accusantium alias
-          omnis magnam est quae, eos nesciunt ea! Similique, quos! Iure, tempora
-          ut!
+          <br />Sou um entusiasta de front-end com um toque de mágica em HTML,
+          CSS e JavaScript. Me formei em Engenharia Elétrica, mas meu coração
+          bate forte mesmo é pelo mundo do desenvolvimento web. <br />
+          <br />Atualmente, estou nos bastidores, aprimorando projetos que em
+          breve estarão prontos para o grande espetáculo. <br />
+          <br />Se você procura um toque de magia para o seu projeto front-end,
+          estou aqui para fazer acontecer.
         </p>
       </h3>
       <div
@@ -31,7 +34,6 @@
           >
             <i
               :class="`devicon-${skillIcon}`"
-              class=""
               :alt="skillsName[skillIconKey]"
             ></i>
             <p class="text-center text-base sm:text-lg lg:text-xl">
