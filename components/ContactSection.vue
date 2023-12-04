@@ -6,7 +6,7 @@
       </p>
     </h2>
     <div
-      class="flex self-start justify-center gap-x-20 text-center lg:gap-x-32"
+      class="flex self-start justify-center gap-x-20 text-center lg:gap-x-32 icons-glow"
     >
       <a href="https://github.com/ricierirossi" target="_blank">
         <p class="text-xl">Github</p>

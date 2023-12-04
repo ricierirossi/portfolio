@@ -10,22 +10,23 @@
         class="grid grid-cols-1 place-self-center gap-4 sm:grid-cols-2 lg:col-start-1 lg:col-end-2 lg:row-start-1 lg:row-end-3"
       >
         <div
-          class="w-60 h-32 bg-white text-black flex items-center justify-center"
+          class="w-60 h-32 bg-white text-black flex items-center justify-center pulse-appear"
+          :style="{ animationDelay: '0s' }"
         >
           Em breve
         </div>
         <div
-          class="w-60 h-32 bg-white text-black flex items-center justify-center"
+          class="w-60 h-32 bg-white text-black flex items-center justify-center pulse-appear"
         >
           Em breve
         </div>
         <div
-          class="w-60 h-32 bg-white text-black flex items-center justify-center"
+          class="w-60 h-32 bg-white text-black flex items-center justify-center pulse-appear"
         >
           Em breve
         </div>
         <div
-          class="w-60 h-32 bg-white text-black flex items-center justify-center"
+          class="w-60 h-32 bg-white text-black flex items-center justify-center pulse-appear"
         >
           Em breve
         </div>
