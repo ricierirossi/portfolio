@@ -11,7 +11,6 @@
       >
         <div
           class="w-60 h-32 bg-white text-black flex items-center justify-center pulse-appear"
-          :style="{ animationDelay: '0s' }"
         >
           Em breve
         </div>
