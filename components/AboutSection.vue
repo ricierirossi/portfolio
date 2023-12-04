@@ -26,13 +26,13 @@
           </p>
         </h3>
         <div
-          class="flex flex-wrap justify-center gap-x-5 text-3xl sm:text-4lg lg:gap-y-5"
+          class="flex flex-wrap justify-center gap-5 text-3xl sm:text-4lg lg:gap-y-5"
         >
           <div
             v-for="(skillIcon, skillIconKey) in skillsIcons"
             :key="skillIconKey"
             :style="{ animationDelay: `${skillIconKey / 5}s` }"
-            class="slide-up"
+            class="slide"
           >
             <i
               :class="`devicon-${skillIcon}`"
@@ -66,18 +66,17 @@ const skillsName = [
   "Nuxt.js",
 ];
 
-// onMounted(() => {
-//   const observer = new IntersectionObserver((entries) => {
-//     entries.forEach((entry) => {
-//       if (entry.isIntersecting) {
-//         entry.target.classList.add("slide-up");
-//       } else {
-//         entry.target.classList.remove("slide-up");
-//       }
-//     });
-//   });
+onMounted(() => {
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("slide-up");
+        return;
+      }
+    });
+  });
 
-//   const element = document.querySelector(`a`);
-//   observer.observe(element);
-// });
+  const element = document.querySelectorAll(`.slide`);
+  element.forEach((take) => observer.observe(take));
+});
 </script>

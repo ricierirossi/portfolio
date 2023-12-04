@@ -6,7 +6,7 @@
       </p>
     </h2>
     <div
-      class="flex self-start justify-center gap-x-20 text-center lg:gap-x-32 icons-glow"
+      class="flex self-start justify-center gap-x-20 text-center lg:gap-x-32 glow"
     >
       <a href="https://github.com/ricierirossi" target="_blank">
         <p class="text-xl">Github</p>
@@ -30,3 +30,19 @@
     </div>
   </section>
 </template>
+
+<script setup>
+onMounted(() => {
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("icons-glow");
+        return;
+      }
+    });
+  });
+
+  const element = document.querySelectorAll(`.glow`);
+  element.forEach((take) => observer.observe(take));
+});
+</script>

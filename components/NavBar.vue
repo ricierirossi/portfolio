@@ -2,6 +2,7 @@
   <nav
     class="bg-charcoal flex justify-around fixed bottom-0 w-full h-10 lg:top-0 lg:justify-end"
   >
+    <!-- TODO INSERIR BOTÃO DE LIGHT MODE -->
     <div
       v-for="(section, keySection) in sections"
       :key="keySection"
@@ -18,12 +19,27 @@
 const sections = ["Início", "Sobre", "Projetos", "Contato"];
 
 const selectedSection = ref(0);
-const coordY = ref(0);
+const sectionCoordY = ref(0);
 
 const scrollingTo = (section) => {
-  coordY.value =
+  sectionCoordY.value =
     document.getElementById(section).getBoundingClientRect().y + window.scrollY;
 
-  globalThis.scrollTo(0, coordY.value);
+  globalThis.scrollTo(0, sectionCoordY.value);
 };
+
+onMounted(() => {
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("underline");
+      } else {
+        entry.target.classList.remove("underline");
+      }
+    });
+  });
+
+  const element = document.querySelectorAll(`.section`);
+  element.forEach((take) => observer.observe(take));
+});
 </script>
