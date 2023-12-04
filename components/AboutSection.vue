@@ -31,6 +31,8 @@
           <div
             v-for="(skillIcon, skillIconKey) in skillsIcons"
             :key="skillIconKey"
+            :style="{ animationDelay: `${skillIconKey / 5}s` }"
+            class="slide-up"
           >
             <i
               :class="`devicon-${skillIcon}`"
@@ -63,4 +65,19 @@ const skillsName = [
   "Vue.js",
   "Nuxt.js",
 ];
+
+// onMounted(() => {
+//   const observer = new IntersectionObserver((entries) => {
+//     entries.forEach((entry) => {
+//       if (entry.isIntersecting) {
+//         entry.target.classList.add("slide-up");
+//       } else {
+//         entry.target.classList.remove("slide-up");
+//       }
+//     });
+//   });
+
+//   const element = document.querySelector(`a`);
+//   observer.observe(element);
+// });
 </script>
