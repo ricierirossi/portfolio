@@ -12,6 +12,7 @@ html {
 .slide-up {
     animation-name: slide-up;
     animation-duration: 5s;
+    animation-fill-mode: backwards;
   }
   
 @keyframes slide-up {
@@ -101,7 +102,7 @@ html {
   
 .pulse-appear:hover {
     animation-name: pulse-hover;
-    animation-duration: 1.5s;
+    animation-duration: 0.5s;
     animation-fill-mode: forwards;
 }
   
