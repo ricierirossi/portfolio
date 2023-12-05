@@ -5,16 +5,17 @@
         <p>Um pouco sobre mim</p>
       </h2>
       <h3
-        class="text-base sm:text-lg lg:text-xl text-justify self-center max-w-md lg:col-start-1 lg-col-end-2 lg:row-start-2 lg:row-end-3 lg:place-self-center"
+        class="text-base sm:text-lg lg:text-xl text-left self-center max-w-md lg:col-start-1 lg-col-end-2 lg:row-start-2 lg:row-end-3 lg:place-self-center"
       >
         <p>
-          <br />Sou um entusiasta de front-end com um toque de mágica em HTML,
-          CSS e JavaScript. Me formei em Engenharia Elétrica, mas meu coração
-          bate forte mesmo é pelo mundo do desenvolvimento web. <br />
-          <br />Atualmente, estou nos bastidores, aprimorando projetos que em
-          breve estarão prontos para o grande espetáculo. <br />
-          <br />Se você procura um toque de magia para o seu projeto front-end,
-          estou aqui para fazer acontecer.
+          <br />Sou um entusiasta de Front-end com um toque de mágica em HTML,
+          CSS e JavaScript. <br />
+          <br />Formado em Engenharia Elétrica, mas meu coração bate forte mesmo
+          é pelo mundo do desenvolvimento web. <br />
+          <br />Hoje, estou nos bastidores, aprimorando projetos que em breve
+          estarão disponíveis aqui. <br />
+          <br />Se você procura um toque de magia para o seu projeto, estou aqui
+          para fazer acontecer.
         </p>
       </h3>
       <div
@@ -25,9 +26,7 @@
             Algumas tecnologias que uso
           </p>
         </h3>
-        <div
-          class="flex flex-wrap justify-center gap-5 text-3xl sm:text-4lg lg:gap-y-5"
-        >
+        <div class="grid grid-cols-3 gap-5 text-3xl sm:text-4lg">
           <div
             v-for="(skillIcon, skillIconKey) in skillsIcons"
             :key="skillIconKey"
