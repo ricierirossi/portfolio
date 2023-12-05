@@ -18,8 +18,8 @@
 <script setup>
 const sections = ["Início", "Sobre", "Projetos", "Contato"];
 
-const selectedSection = ref(0);
-const sectionCoordY = ref(0);
+const selectedSection = ref(0); // Sessão selecionada - inicialmente sessão Início - usada para aplicar a classe
+const sectionCoordY = ref(0); // window top = 0px - usado para scrollar
 
 const scrollingTo = (section) => {
   sectionCoordY.value =
@@ -28,18 +28,28 @@ const scrollingTo = (section) => {
   globalThis.scrollTo(0, sectionCoordY.value);
 };
 
-onMounted(() => {
-  const observer = new IntersectionObserver((entries) => {
-    entries.forEach((entry) => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add("underline");
-      } else {
-        entry.target.classList.remove("underline");
-      }
-    });
-  });
+const scrollPosition = ref(0);
 
-  const element = document.querySelectorAll(`.section`);
-  element.forEach((take) => observer.observe(take));
+const handleScroll = () => {
+  if (process.client) {
+    let currentScrollPosition = window.scrollY;
+
+    if (currentScrollPosition < sectionCoordY.value) {
+      console.log("Scrolling up");
+
+      //your desire logic
+    } else {
+      console.log("Scrolling down");
+      //your desire logic
+    }
+
+    sectionCoordY.value = window.scrollY;
+  }
+};
+
+onMounted(() => {
+  if (process.client) {
+    window.addEventListener("scroll", handleScroll);
+  }
 });
 </script>
