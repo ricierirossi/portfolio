@@ -75,7 +75,7 @@ onMounted(() => {
     });
   });
 
-  const element = document.querySelectorAll(`.slide`);
-  element.forEach((take) => observer.observe(take));
+  const elements = document.querySelectorAll(`.slide`);
+  elements.forEach((element) => observer.observe(element));
 });
 </script>
