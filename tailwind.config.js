@@ -22,6 +22,5 @@ export default {
       },
     },
   },
-  darkMode: ["class", '[data-mode="light"]'],
   plugins: [],
 };
