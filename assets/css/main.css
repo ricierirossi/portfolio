@@ -28,18 +28,9 @@ html {
     }
 }
 
-.slide-down, .slide-down-2, .slide-down-4 {
+.slide-down {
     animation-name: slide-down;
-    animation-duration: 3s;
-}
-
-.slide-down-2 {
-    animation-delay: 2s;
-    animation-fill-mode: backwards;
-}
-
-.slide-down-4 {
-    animation-delay: 4s;
+    animation-duration: 2s;
     animation-fill-mode: backwards;
 }
 
@@ -61,7 +52,7 @@ html {
 
 .letter-glow {
     animation-name: letter-glow;
-    animation-duration: 7s;
+    animation-duration: 2s;
 }
 
 @keyframes letter-glow{
@@ -85,13 +76,13 @@ html {
   
 @keyframes icons-glow{
     0%   {
-        text-shadow: 0px 0px 1px rgba(255,255,255,0.1)
+        text-shadow: 0px 0px 0px rgba(255, 255, 255, 0)
     }
-    66%  { 
-        text-shadow: 0px 0px 20px rgba(255,255,255,0.9) 
+    50%  { 
+        text-shadow: 0px 0px 20px rgba(255, 255, 255, 0.5) 
     }
     100% { 
-        text-shadow: 0px 0px 20px rgba(255,255,255,0.0)
+        text-shadow: 0px 0px 20px rgba(255, 255, 255, 0)
     }
 }
 

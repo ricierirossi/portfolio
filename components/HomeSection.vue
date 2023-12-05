@@ -13,14 +13,14 @@
         </h2>
       </div>
       <h3
-        class="text-base sm:text-lg lg:text-xl text-center self-center max-w-xs slide-down-2 ;"
+        class="text-base sm:text-lg lg:text-xl text-center self-center max-w-xs slide-down ;"
       >
         <p>
           Convido você a mergulhar nos meus projetos e descubrir mais sobre
           minha jornada e visão no desenvolvimento web.
         </p>
       </h3>
-      <div class="flex justify-around slide-down-4">
+      <div class="flex justify-around slide-down">
         <NetworkIconsSmall />
         <p class="text-2xl">&lt;/&gt;</p>
       </div>
