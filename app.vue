@@ -11,11 +11,7 @@
 </template>
 
 <!-- Google tag (gtag.js) -->
-<script
-  async
-  src="https://www.googletagmanager.com/gtag/js?id=G-F8QQN6EZTE"
-></script>
-<script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-F8QQN6EZTE">
 window.dataLayer = window.dataLayer || [];
 function gtag() {
   dataLayer.push(arguments);
