@@ -11,7 +11,7 @@
 </template>
 
 <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-F8QQN6EZTE">
+<!-- <script async src="https://www.googletagmanager.com/gtag/js?id=G-F8QQN6EZTE">
 window.dataLayer = window.dataLayer || [];
 function gtag() {
   dataLayer.push(arguments);
@@ -19,4 +19,4 @@ function gtag() {
 gtag("js", new Date());
 
 gtag("config", "G-F8QQN6EZTE");
-</script>
+</script> -->
