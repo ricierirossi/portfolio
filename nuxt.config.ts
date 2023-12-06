@@ -1,6 +1,10 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   devtools: { enabled: false },
+  modules: ['nuxt-gtag'],
+  gtag: {
+    id: 'G-F8QQN6EZTE'
+  },
   css: ['~/assets/css/main.css'],
   postcss: {
     plugins: {
