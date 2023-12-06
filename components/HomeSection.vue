@@ -3,7 +3,7 @@
     <div class="flex flex-col gap-y-10 pb-10">
       <h1 class="letter-glow">
         <p class="text-3xl sm:text-4xl lg:text-5xl">
-          Olá, sou o <br /><b>Matheus Ricieri</b>
+          Olá, sou o <br />Matheus Ricieri
         </p>
       </h1>
       <div class="text-base sm:text-lg lg:text-xl">
