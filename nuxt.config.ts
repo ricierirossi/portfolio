@@ -1,7 +1,10 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   devtools: { enabled: false },
-  
+  modules: ['nuxt-gtag'],
+  gtag: {
+    id: 'G-F8QQN6EZTE'
+  },
   css: ['~/assets/css/main.css'],
   postcss: {
     plugins: {
@@ -11,10 +14,6 @@ export default defineNuxtConfig({
   },
   app: {
     head: {
-      modules: ['nuxt-gtag'],
-  gtag: {
-    id: 'G-F8QQN6EZTE'
-  },
       title: 'Portifólio | Matheus Ricieri - Desenvolvedor Front-end',
       meta: [
         {
